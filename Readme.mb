@@ -1,1 +1,47 @@
+# Unity Slot Machine
 
+## Game Overview
+
+This project is a 2D slot machine game developed using Unity.
+
+The player can spin three reels containing Bell, Cherry, Seven and BAR symbols.
+The game includes betting, balance management, random symbol selection and
+prize calculation.
+
+## How to Play
+
+1. Select the desired bet amount.
+2. Press the Spin button.
+3. Wait for all three reels to stop.
+4. Matching symbols provide rewards.
+5. Three matching symbols trigger the jackpot and free spins.
+
+## WebGL Build
+
+The WebGL build is available in:
+
+Main/WebGL
+
+To run the WebGL version, open the WebGL build using a local web server.
+
+## Bonus Features
+
+- Adjustable bet amount
+- Free spins
+- Jackpot bonus
+- Jackpot bonus button which appears only for 2 seconds if clicked we can get +500 bonus amount
+- Slot machine sound effects
+- Staggered reel stopping animation
+
+## Thought Process / Approach
+
+The project was designed using separate classes for different responsibilities.
+
+SlotMachine controls the overall spinning process.
+
+SlotReel controls the movement, random selection and stopping of each reel.
+
+PrizeManager handles balance, betting, matching symbols, prizes and bonus rewards.
+
+The reel uses random symbol selection while maintaining separate logical symbol IDs
+for reliable prize calculation.
